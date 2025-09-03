@@ -1,0 +1,35 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+Rayfield:Notify({
+   Title = "HEY!!",
+   Content = "PLS SUBS!!",
+   Duration = 6.5,
+   Image = "rewind",
+})
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()local Window = Rayfield:CreateWindow({
+   Name = "CEDRICS HUB",
+   Icon = 0,LoadingTitle = "Rayfield Interface Suite",
+   LoadingSubtitle = "by Sirius",
+   ShowText = "Rayfield",Theme = "Bloom",ToggleUIKeybind = "K",DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false,ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil,FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false,Invite = "noinvitelink"RememberJoins = trueKeySystem = false,KeySettings = {Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided",FileName = "Key",SaveKey = true,GrabKeyFromSite = false,Key = {"Hello"}
+
+local MainTab = Window:CreateTab("Main Tab", "rewind")
+
+local MainSection = MainTab:CreateSection("Main Section")
+
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+
+                      print("the user has tapped the button!")
+
+                     end,
+})
