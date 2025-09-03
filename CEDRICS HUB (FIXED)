@@ -10,7 +10,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()local
    Name = "CEDRICS HUB",
    Icon = 0,LoadingTitle = "Rayfield Interface Suite",
    LoadingSubtitle = "by Sirius",
-   ShowText = "Rayfield",Theme = "Bloom",ToggleUIKeybind = "K",DisableRayfieldPrompts = false,
+   ShowText = "Rayfield",Theme = "Default",ToggleUIKeybind = "K",DisableRayfieldPrompts = false,
    DisableBuildWarnings = false,ConfigurationSaving = {
       Enabled = true,
       FolderName = nil,FileName = "Big Hub"
@@ -33,3 +33,5 @@ local Button = Tab:CreateButton({
 
                      end,
 })
+
+Rayfield:LoadConfiguration()
