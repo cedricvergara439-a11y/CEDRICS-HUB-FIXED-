@@ -6,32 +6,47 @@ Rayfield:Notify({
    Duration = 6.5,
    Image = "rewind",
 })
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()local Window = Rayfield:CreateWindow({
-   Name = "CEDRICS HUB",
-   Icon = 0,LoadingTitle = "Rayfield Interface Suite",
-   LoadingSubtitle = "by Sirius",
-   ShowText = "Rayfield",Theme = "Default",ToggleUIKeybind = "K",DisableRayfieldPrompts = false,
-   DisableBuildWarnings = false,ConfigurationSaving = {
-      Enabled = true,
-      FolderName = nil,FileName = "Big Hub"
-   },
 
+local Window = Rayfield:CreateWindow({
+   Name = "CEDRICS HUB",
+   Icon = 0,
+   LoadingTitle = "Rayfield Interface Suite",
+   LoadingSubtitle = "by Sirius",
+   ShowText = "Rayfield",
+   Theme = "Bloom",
+   ToggleUIKeybind = "K",
+   DisableRayfieldprompts = false,
+   DisableBuildWarnings = false,
+   ConfigurationsSettings = {
+      Enabled = true,
+      FolderName = nil,
+      FileName = "Big Hub"
+   },
    Discord = {
-      Enabled = false,Invite = "noinvitelink"RememberJoins = trueKeySystem = false,KeySettings = {Title = "Untitled",
-      Subtitle = "Key System",
-      Note = "No method of obtaining the key is provided",FileName = "Key",SaveKey = true,GrabKeyFromSite = false,Key = {"Hello"}
+      Enabled = false,
+      Invite = "noinvitelink",
+      RememberJoins = true,
+      KeySystem = false,
+      KeySettings = {
+         Title = "Untitled",
+         Subtitle = "Key System",
+         Note = "No method of obtaining the key is provided",
+         FileName = "Key",
+         SaveKey = true,
+         GrabKeyFromSite = false,
+         Key = {"Hello"}
+      }
+   }
+})
 
 local MainTab = Window:CreateTab("Main Tab", "rewind")
 
 local MainSection = MainTab:CreateSection("Main Section")
 
-local Button = Tab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Button Example",
    Callback = function()
-
-                      print("the user has tapped the button!")
-
-                     end,
+      print("the user has tapped the button!")
+   end,
 })
 
-Rayfield:LoadConfiguration()
